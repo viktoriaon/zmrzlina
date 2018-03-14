@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Farebná zmrzlina</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+<!--*****************MENU*******************-->
+	<header>
+		<div id="header-inner">
+			<a href="index.html" id="logo"> <img src="img/logo.png"></a>
+			<nav>
+				<a href="#" id="menu-icon"></a>
+				<ul>
+					<li><a href="index.html" ">Domov</a></li>
+					<li><a href="onas.html">O nás</a></li>
+					<li><a href="galeria.html">Galéria</a></li>
+					<li><a href="prichute.html">Príchute</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+<!--*************************************************-->
+<div id="space">
+  
+</div>
+<div class="galeria">
+	<div class="row">
+  <div class="column">
+    <img src="img/galeria/g1sm.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/galeria/g2sm.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/galeria/g3sm.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/galeria/g4sm.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/galeria/g5sm.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/galeria/g6sm.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/galeria/g7sm.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/galeria/g8sm.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/galeria/g9sm.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+  </div>
+</div>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 9</div>
+        <img src="img/galeria/g1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 9</div>
+        <img src="img/galeria/g2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 9</div>
+        <img src="img/galeria/g3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 9</div>
+        <img src="img/galeria/g4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 9</div>
+        <img src="img/galeria/g5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 9</div>
+        <img src="img/galeria/g6.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 9</div>
+        <img src="img/galeria/g7.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 9</div>
+        <img src="img/galeria/g8.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 9</div>
+        <img src="img/galeria/g9.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/galeria/g1sm.jpg" onclick="currentSlide(1)" alt="zmrzlina">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/galeria/g2sm.jpg" onclick="currentSlide(2)" alt="zmrzlina">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/galeria/g3sm.jpg" onclick="currentSlide(3)" alt="zmrzlina">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/galeria/g4sm.jpg" onclick="currentSlide(4)" alt="<3">
+    </div>
+    <div class="column">
+      <img class="demo" src="img/galeria/g5sm.jpg" onclick="currentSlide(5)" alt="zmrzlina">
+    </div>
+    <div class="column">
+      <img class="demo" src="img/galeria/g6sm.jpg" onclick="currentSlide(6)" alt="zmrzlina">
+    </div>
+    <div class="column">
+      <img class="demo" src="img/galeria/g7sm.jpg" onclick="currentSlide(7)" alt="zmrzlina">
+    </div>
+    <div class="column">
+      <img class="demo" src="img/galeria/g8sm.jpg" onclick="currentSlide(8)" alt="zmrzlina">
+    </div>
+    <div class="column">
+      <img class="demo" src="img/galeria/g9sm.jpg" onclick="currentSlide(9)" alt="zmrzlina">
+    </div>
+  </div>
+</div>
+</div>
+<!--************************-->
+	<footer>
+		<ul class="social">
+			<li><a href="https://www.facebook.com/search/top/?q=ice%20cream" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://plus.google.com/+Icecreamrecipes1" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+			<li><a href="https://twitter.com/hashtag/icecream" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://www.youtube.com/results?search_query=ice+cream" target="_blank"><i class="fa fa-youtube"></i></a></li>
+			<li><a href="https://www.instagram.com/explore/tags/icecream/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+	</footer>
+<!--*****************-->
+	<footer class="second">
+		<p>&copy; Viktória Ondrejová 2017</p>
+	</footer>
+<!--***********************-->
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+
+}
+</script>
+
+</body>
+</html>
